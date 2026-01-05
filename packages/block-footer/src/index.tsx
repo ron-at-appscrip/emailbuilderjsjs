@@ -406,8 +406,8 @@ export function Footer({ style, props }: FooterProps) {
                   src={link?.iconUrl || 'https://placehold.co/24x24/CCC/666?text=?'}
                   alt={link?.platform || 'Social'}
                   style={socialIconStyle}
-                  onMouseOver={(e) => { e.currentTarget.style.opacity = '0.7'; }}
-                  onMouseOut={(e) => { e.currentTarget.style.opacity = '1'; }}
+                  onMouseOver={(e: React.MouseEvent<HTMLImageElement>) => { e.currentTarget.style.opacity = '0.7'; }}
+                  onMouseOut={(e: React.MouseEvent<HTMLImageElement>) => { e.currentTarget.style.opacity = '1'; }}
                 />
               </a>
             ))}
@@ -423,8 +423,8 @@ export function Footer({ style, props }: FooterProps) {
                 href={link?.url || '#'}
                 onClick={(e) => handleLinkClick(e, link?.url || '')}
                 style={footerLinkStyle}
-                onMouseOver={(e) => { e.currentTarget.style.opacity = '0.7'; }}
-                onMouseOut={(e) => { e.currentTarget.style.opacity = '1'; }}
+                onMouseOver={(e: React.MouseEvent<HTMLAnchorElement>) => { e.currentTarget.style.opacity = '0.7'; }}
+                onMouseOut={(e: React.MouseEvent<HTMLAnchorElement>) => { e.currentTarget.style.opacity = '1'; }}
               >
                 {link?.text || 'Link'}
               </a>
