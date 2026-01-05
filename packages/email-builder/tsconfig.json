@@ -29,5 +29,6 @@
       "@usewaypoint/document-core": ["../document-core/src/index.ts"]
     }
   },
-  "exclude": ["dist"]
+  "include": ["src/**/*"],
+  "exclude": ["dist", "**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts", "**/*.test.tsx"]
 }
