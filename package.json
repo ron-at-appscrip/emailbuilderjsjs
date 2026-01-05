@@ -16,6 +16,7 @@
     "build:blocks": "npm run build --workspace=packages/block-address && npm run build --workspace=packages/block-avatar && npm run build --workspace=packages/block-button && npm run build --workspace=packages/block-columns-container && npm run build --workspace=packages/block-contact && npm run build --workspace=packages/block-container && npm run build --workspace=packages/block-coupon && npm run build --workspace=packages/block-divider && npm run build --workspace=packages/block-footer && npm run build --workspace=packages/block-header && npm run build --workspace=packages/block-heading && npm run build --workspace=packages/block-html && npm run build --workspace=packages/block-image && npm run build --workspace=packages/block-map && npm run build --workspace=packages/block-order-summary && npm run build --workspace=packages/block-product-card && npm run build --workspace=packages/block-promo-banner && npm run build --workspace=packages/block-social-links && npm run build --workspace=packages/block-spacer && npm run build --workspace=packages/block-text",
     "build:core": "npm run build --workspace=packages/document-core",
     "build:email-builder": "npm run build --workspace=packages/email-builder",
+    "build:vercel": "npm run build:all && npm run build --workspace=packages/editor-sample",
     "test": "npx jest"
   },
   "author": "carlos@usewaypoint.com",
