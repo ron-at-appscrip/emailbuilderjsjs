@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build:all && npm run build --workspace=@usewaypoint/editor-sample",
-  "outputDirectory": "dist",
+  "outputDirectory": "packages/editor-sample/dist",
   "installCommand": "npm install --legacy-peer-deps"
 }
 
