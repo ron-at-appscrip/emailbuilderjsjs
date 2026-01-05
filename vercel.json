@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:vercel",
+  "buildCommand": "npm run build:all && npm run build --workspace=packages/editor-sample",
   "outputDirectory": "packages/editor-sample/dist",
   "installCommand": "npm install --legacy-peer-deps"
 }
