@@ -4,12 +4,13 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "target": "ES2022",
-  "files": [
-    "dist"
-  ],
   "workspaces": [
     "packages/*"
   ],
+  "files": [
+    "dist"
+  ],
+
   "scripts": {
     "build": "echo 'Root build skipped - use package-specific builds'",
     "build:all": "npm run build:blocks && npm run build:core && npm run build:email-builder",
