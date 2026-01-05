@@ -4,11 +4,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "target": "ES2022",
-  "workspaces": [
-    "packages/*"
-  ],
   "files": [
     "dist"
+  ],
+  "workspaces": [
+    "packages/*"
   ],
 
   "scripts": {
