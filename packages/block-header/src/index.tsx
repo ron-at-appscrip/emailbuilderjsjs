@@ -276,8 +276,8 @@ export function Header({ style, props }: HeaderProps) {
                 href={link?.url || '#'}
                 onClick={(e) => handleLinkClick(e, link?.url || '')}
                 style={navLinkStyle}
-                onMouseOver={(e) => { e.currentTarget.style.opacity = '0.7'; }}
-                onMouseOut={(e) => { e.currentTarget.style.opacity = '1'; }}
+                onMouseOver={(e: React.MouseEvent<HTMLAnchorElement>) => { e.currentTarget.style.opacity = '0.7'; }}
+                onMouseOut={(e: React.MouseEvent<HTMLAnchorElement>) => { e.currentTarget.style.opacity = '1'; }}
               >
                 {link?.text || 'Link'}
               </a>

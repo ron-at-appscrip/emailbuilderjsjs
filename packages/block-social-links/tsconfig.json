@@ -3,10 +3,16 @@
   "compilerOptions": {
     "target": "es2015",
     "module": "esnext",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "jsx": "react",
     "outDir": "dist",
-    "lib": ["ES2015", "DOM"]
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
-  "exclude": ["dist"]
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"]
 }
 

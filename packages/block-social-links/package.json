@@ -9,8 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format cjs,esm --dts",
-    "dev": "tsup src/index.tsx --format cjs,esm --dts --watch"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "author": "",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "zod": "^3.0.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.55",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }

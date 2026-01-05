@@ -202,8 +202,8 @@ export function SocialLinks({ style, props }: SocialLinksProps) {
                 src={link?.iconUrl || 'https://placehold.co/32x32/CCC/666?text=?'}
                 alt={link?.platform || 'Social'}
                 style={iconStyle}
-                onMouseOver={(e) => { e.currentTarget.style.opacity = '0.7'; }}
-                onMouseOut={(e) => { e.currentTarget.style.opacity = '1'; }}
+                onMouseOver={(e: React.MouseEvent<HTMLImageElement>) => { e.currentTarget.style.opacity = '0.7'; }}
+                onMouseOut={(e: React.MouseEvent<HTMLImageElement>) => { e.currentTarget.style.opacity = '1'; }}
               />
             </a>
           ))}
