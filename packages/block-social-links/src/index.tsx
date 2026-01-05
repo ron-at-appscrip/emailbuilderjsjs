@@ -203,12 +203,14 @@ export function SocialLinks({ style, props }: SocialLinksProps) {
                 alt={link?.platform || 'Social'}
                 style={iconStyle}
                 onMouseOver={(e: React.MouseEvent<HTMLImageElement>) => { 
-                  const target = e.currentTarget as HTMLImageElement;
-                  target.style.opacity = '0.7';
+                  if (e.currentTarget && 'style' in e.currentTarget) {
+                    (e.currentTarget as HTMLElement).style.opacity = '0.7';
+                  }
                 }}
                 onMouseOut={(e: React.MouseEvent<HTMLImageElement>) => { 
-                  const target = e.currentTarget as HTMLImageElement;
-                  target.style.opacity = '1';
+                  if (e.currentTarget && 'style' in e.currentTarget) {
+                    (e.currentTarget as HTMLElement).style.opacity = '1';
+                  }
                 }}
               />
             </a>
