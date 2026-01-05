@@ -1,7 +1,0 @@
-{
-  "buildCommand": "npm run build:vercel",
-  "installCommand": "npm install --legacy-peer-deps",
-  "outputDirectory": "packages/editor-sample/dist",
-  "framework": "vite"
-}
-
