@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build:all && cd packages/editor-sample && npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "outputDirectory": "packages/editor-sample/dist",
+  "framework": "vite"
+}
+

@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "outDir": "dist",
+    "lib": ["ES2015", "DOM"],
+    "baseUrl": ".",
+    "paths": {
+      "react": ["../editor-sample/node_modules/@types/react"],
+      "zod": ["../editor-sample/node_modules/zod"]
+    }
+  },
+  "exclude": ["dist"]
+}

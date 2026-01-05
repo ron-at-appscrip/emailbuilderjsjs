@@ -1,0 +1,33 @@
+{
+  "name": "@usewaypoint/block-social-links",
+  "version": "0.0.1",
+  "description": "Social Links block for email builder",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "dev": "tsup src/index.tsx --format cjs,esm --dts --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
+

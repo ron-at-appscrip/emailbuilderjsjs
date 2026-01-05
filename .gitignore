@@ -1,0 +1,30 @@
+# dependencies
+node_modules
+
+# misc
+.esbuild
+.DS_Store
+.env
+.envrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build output
+dist
+**/dist
+
+# TypeScript compiled output
+packages/**/src/**/*.js
+packages/**/src/**/*.js.map
+packages/**/src/**/*.d.ts
+packages/**/src/**/*.d.ts.map
+packages/**/tests/**/*.js
+packages/**/tests/**/*.js.map
+packages/**/tests/**/*.d.ts
+packages/**/tests/**/*.d.ts.map
+packages/**/vite.config.js
+packages/**/vite.config.js.map
+packages/**/vite.config.d.ts
+packages/**/vite.config.d.ts.map
+!packages/**/src/vite-env.d.ts

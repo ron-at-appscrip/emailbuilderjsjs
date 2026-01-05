@@ -1,0 +1,54 @@
+{
+  "name": "@usewaypoint/email-builder",
+  "version": "0.0.8",
+  "description": "React component to render email messages",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "author": "carlos@usewaypoint.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18",
+    "react-dom": "^16 || ^17 || ^18",
+    "zod": "^1 || ^2 || ^3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@usewaypoint/block-address": "file:../block-address",
+    "@usewaypoint/block-avatar": "file:../block-avatar",
+    "@usewaypoint/block-button": "file:../block-button",
+    "@usewaypoint/block-columns-container": "file:../block-columns-container",
+    "@usewaypoint/block-contact": "file:../block-contact",
+    "@usewaypoint/block-container": "file:../block-container",
+    "@usewaypoint/block-coupon": "file:../block-coupon",
+    "@usewaypoint/block-divider": "file:../block-divider",
+    "@usewaypoint/block-footer": "file:../block-footer",
+    "@usewaypoint/block-header": "file:../block-header",
+    "@usewaypoint/block-heading": "file:../block-heading",
+    "@usewaypoint/block-html": "file:../block-html",
+    "@usewaypoint/block-image": "file:../block-image",
+    "@usewaypoint/block-map": "file:../block-map",
+    "@usewaypoint/block-order-summary": "file:../block-order-summary",
+    "@usewaypoint/block-product-card": "file:../block-product-card",
+    "@usewaypoint/block-promo-banner": "file:../block-promo-banner",
+    "@usewaypoint/block-social-links": "file:../block-social-links",
+    "@usewaypoint/block-spacer": "file:../block-spacer",
+    "@usewaypoint/block-text": "file:../block-text",
+    "@usewaypoint/document-core": "file:../document-core"
+  }
+}

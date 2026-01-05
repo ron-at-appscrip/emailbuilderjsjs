@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+
+    "skipLibCheck": true,
+    "declarationMap": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@usewaypoint/block-address": ["packages/block-address/src/index.tsx"],
+      "@usewaypoint/block-avatar": ["packages/block-avatar/src/index.tsx"],
+      "@usewaypoint/block-button": ["packages/block-button/src/index.tsx"],
+      "@usewaypoint/block-columns-container": ["packages/block-columns-container/src/index.tsx"],
+      "@usewaypoint/block-contact": ["packages/block-contact/src/index.tsx"],
+      "@usewaypoint/block-container": ["packages/block-container/src/index.tsx"],
+      "@usewaypoint/block-coupon": ["packages/block-coupon/src/index.tsx"],
+      "@usewaypoint/block-divider": ["packages/block-divider/src/index.tsx"],
+      "@usewaypoint/block-footer": ["packages/block-footer/src/index.tsx"],
+      "@usewaypoint/block-header": ["packages/block-header/src/index.tsx"],
+      "@usewaypoint/block-heading": ["packages/block-heading/src/index.tsx"],
+      "@usewaypoint/block-html": ["packages/block-html/src/index.tsx"],
+      "@usewaypoint/block-image": ["packages/block-image/src/index.tsx"],
+      "@usewaypoint/block-map": ["packages/block-map/src/index.tsx"],
+      "@usewaypoint/block-order-summary": ["packages/block-order-summary/src/index.tsx"],
+      "@usewaypoint/block-product-card": ["packages/block-product-card/src/index.tsx"],
+      "@usewaypoint/block-promo-banner": ["packages/block-promo-banner/src/index.tsx"],
+      "@usewaypoint/block-social-links": ["packages/block-social-links/src/index.tsx"],
+      "@usewaypoint/block-spacer": ["packages/block-spacer/src/index.tsx"],
+      "@usewaypoint/block-text": ["packages/block-text/src/index.tsx"],
+      "@usewaypoint/document-core": ["packages/document-core/src/index.ts"],
+      "@usewaypoint/email-builder": ["packages/email-builder/src/index.ts"]
+    }
+  },
+  "exclude": ["**/dist", "**/dist/**", "**/node_modules", "packages/**"]
+}
